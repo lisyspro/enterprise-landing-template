@@ -1,15 +1,11 @@
 import Header from "@/components/layout/Header";
+import Hero from "@/components/sections/Hero";
 
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen bg-white">
       <Header />
-
-      <h1>Enterprise Landing Template</h1>
-
-      <p>Powered by Lisyspro</p>
-
-      <p>Versión 1.0</p>
+      <Hero />
     </main>
   );
 }
