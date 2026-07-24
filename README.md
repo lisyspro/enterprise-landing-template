@@ -1,72 +1,154 @@
-# Lisyspro Enterprise Kit
+# Enterprise Landing Template
 
-Plantilla profesional desarrollada por Lisyspro para la creación de sitios web empresariales modernos utilizando Next.js, React, TypeScript y Tailwind CSS.
+Plantilla profesional para sitios web corporativos desarrollada con **Next.js 16**, **React**, **TypeScript** y **Tailwind CSS**.
 
----
-
-## Objetivo
-
-Este proyecto busca convertirse en la plantilla base para todos los desarrollos web de Lisyspro.
-
-Cada nuevo cliente utilizará esta misma estructura cambiando únicamente:
-
-- Información de la empresa
-- Logo
-- Colores corporativos
-- Fotografías
-- Servicios
+Proyecto desarrollado por **Lisyspro** con el objetivo de crear una base reutilizable para clientes de diferentes sectores.
 
 ---
 
-## Tecnologías
+# Estado del proyecto
+
+🚧 En desarrollo
+
+Versión actual:
+
+**v0.2.0**
+
+---
+
+# Objetivos
+
+- Crear una plantilla reutilizable para sitios empresariales.
+- Reducir el tiempo de desarrollo de nuevos proyectos.
+- Facilitar la personalización mediante archivos de configuración.
+- Publicar gratuitamente utilizando GitHub y Azure Static Web Apps.
+
+---
+
+# Tecnologías
 
 - Next.js 16
 - React
 - TypeScript
 - Tailwind CSS
+- Lucide React
 - Git
 - GitHub
-- Azure Static Web Apps (Próximamente)
 
 ---
 
-## Estructura
+# Estructura del proyecto
 
+```
 app/
 components/
+│
+├── layout/
+├── sections/
+└── ui/
+
 config/
 content/
 docs/
 hooks/
 lib/
+public/
 styles/
 types/
+```
 
 ---
 
-## Estado del proyecto
+# Componentes implementados
 
-### Sprint 1
-- [x] Configuración del entorno
-- [x] Proyecto Next.js
-- [x] GitHub
-- [x] Header básico
+## Layout
 
-### Sprint 2
-- [x] Configuración de empresa
-- [x] Theme
-- [x] Botón reutilizable
+- Header
 
-### Sprint 3
-- [ ] Header profesional
-- [ ] Hero
-- [ ] Servicios
-- [ ] Footer
+## UI
+
+- Button
+- Container
+- ServiceIcon
+
+## Sections
+
+- Hero
+- Services
 
 ---
 
-## Autor
+# Contenido dinámico
 
-Lisyspro
+Actualmente la información del sitio se administra desde:
 
-Servicios y Soluciones Profesionales
+```
+config/company.ts
+content/navigation.ts
+content/hero.ts
+content/services.ts
+```
+
+Esto permite reutilizar la plantilla cambiando únicamente el contenido.
+
+---
+
+# Funcionalidades implementadas
+
+- Header responsive (estructura inicial)
+- Hero principal
+- Botones reutilizables con variantes
+- Sección de servicios
+- Tarjetas dinámicas utilizando `.map()`
+- Iconografía mediante Lucide React
+- Separación entre contenido y presentación
+- Arquitectura modular
+
+---
+
+# Próximos desarrollos
+
+- Why Choose Us
+- Estadísticas
+- Testimonios
+- Clientes
+- FAQ
+- Formulario de contacto
+- Footer
+- Responsive móvil
+- Animaciones
+- SEO
+- Azure Static Web Apps
+- GitHub Actions
+- CMS basado en archivos
+
+---
+
+# Historial
+
+## v0.2.0
+
+- Arquitectura inicial del proyecto
+- Header corporativo
+- Hero reutilizable
+- Sistema de botones
+- Separación del contenido
+- Sección Servicios
+- Integración de Lucide React
+- Primera versión del Design System
+
+## v0.1.0
+
+- Inicialización del proyecto
+- Next.js
+- Tailwind CSS
+- Configuración Git
+- Primer commit
+
+---
+
+# Autor
+
+Desarrollado por **Lisyspro**
+
+Tecnología para impulsar empresas.
