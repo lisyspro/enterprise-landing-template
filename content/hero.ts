@@ -1,8 +1,11 @@
 export const hero = {
-  title: "Soluciones Tecnológicas para Empresas",
+  badge: "SOLUCIONES TECNOLÓGICAS",
 
-  subtitle:
-    "Ayudamos a las empresas a crecer mediante infraestructura TI, Microsoft 365, Azure, automatización y desarrollo web.",
+  title:
+    "Transformamos la tecnología en una ventaja competitiva para tu empresa.",
+
+  description:
+    "Ayudamos a pequeñas y medianas empresas a modernizar su infraestructura TI, Microsoft 365, Azure, desarrollo web y automatización mediante soluciones confiables y profesionales.",
 
   primaryButton: "Solicitar asesoría",
 

@@ -4,13 +4,24 @@ import Button from "@/components/ui/Button";
 
 import { navigation } from "@/content/navigation";
 
+import Container from "@/components/ui/Container";
+
+import Image from "next/image";
+
 export default function Header() {
   return (
     <header className="border-b border-gray-200 bg-white">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-        <h2 className="text-2xl font-bold text-[#005699]">
-          {company.name}
-        </h2>
+      <Container>
+  <div className="flex h-20 items-center justify-between">
+        <a href="/" className="flex items-center">
+  <Image
+    src="/logos/lisyspro-logo.png"
+    alt="Lisyspro"
+    width={220}
+    height={60}
+    priority
+  />
+</a>
 
       <nav className="hidden items-center gap-8 md:flex">
   {navigation.map((item) => (
@@ -25,7 +36,8 @@ export default function Header() {
 </nav>
 
         <Button>Contáctanos</Button>
-      </div>
+       </div>
+</Container>
     </header>
 );
 }
