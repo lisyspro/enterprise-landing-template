@@ -27,11 +27,34 @@ export const lisysproConfig: ClientConfig = {
     foreground: "#171717",
   },
 
+  hero: {
+    badge: "SOLUCIONES TECNOLÓGICAS",
+
+    title:
+      "Transformamos la tecnología en una ventaja competitiva para tu empresa.",
+
+    description:
+      "Ayudamos a pequeñas y medianas empresas a modernizar su infraestructura TI, Microsoft 365, Azure, desarrollo web y automatización mediante soluciones confiables y profesionales.",
+
+    primaryButton: "Solicitar asesoría",
+    primaryHref: "#contacto",
+
+    secondaryButton: "Nuestros servicios",
+    secondaryHref: "#servicios",
+
+    image: "/images/hero/hero-illustration.png",
+
+    imageAlt:
+      "Ilustración de soluciones tecnológicas empresariales de Lisyspro",
+  },
+
   contact: {
     email: "contacto@lisyspro.com",
     phone: "",
+
     whatsappLabel: "Escríbenos directamente",
     whatsappUrl: "#",
+
     location: "Ibagué, Colombia",
   },
 
@@ -57,7 +80,8 @@ export const lisysproConfig: ClientConfig = {
   cta: {
     eyebrow: "Hablemos de tu proyecto",
 
-    title: "¿Listo para transformar la tecnología de tu empresa?",
+    title:
+      "¿Listo para transformar la tecnología de tu empresa?",
 
     description:
       "Cuéntanos qué necesitas y te ayudaremos a encontrar una solución tecnológica práctica, confiable y adaptada a tu negocio.",

@@ -31,7 +31,7 @@ export default function ClientLanding({
       <Header client={client} />
 
       <main>
-        <Hero />
+        <Hero client={client} />
         <Services />
         <WhyUs />
         <Stats />

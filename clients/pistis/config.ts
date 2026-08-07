@@ -13,12 +13,12 @@ export const pistisConfig: ClientConfig = {
   description:
     "Servicios integrales en Seguridad y Salud en el Trabajo, medio ambiente y calidad.",
 
- logo: {
-  src: "",
-  alt: "PISTIS Soluciones Integrales S.A.S.",
-  width: 220,
-  height: 80,
-},
+  logo: {
+    src: "",
+    alt: "PISTIS Soluciones Integrales S.A.S.",
+    width: 220,
+    height: 80,
+  },
 
   brand: {
     primary: "#00A81C",
@@ -27,8 +27,30 @@ export const pistisConfig: ClientConfig = {
     foreground: "#171717",
   },
 
+  hero: {
+    badge: "SEGURIDAD Y SALUD EN EL TRABAJO",
+
+    title:
+      "Especialistas en Seguridad y Salud en el Trabajo para tu organización",
+
+    description:
+      "Brindamos servicios integrales en Seguridad y Salud en el Trabajo, medio ambiente y calidad, con soluciones adaptadas a las necesidades de organizaciones de diferentes sectores económicos.",
+
+    primaryButton: "Solicitar asesoría",
+    primaryHref: "#contacto",
+
+    secondaryButton: "Conocer servicios",
+    secondaryHref: "#servicios",
+
+    image: "",
+
+    imageAlt:
+      "Seguridad y Salud en el Trabajo - PISTIS Soluciones Integrales",
+  },
+
   contact: {
     email: "gerencia@pistis.com.co",
+
     phone: "3203191810",
 
     whatsappLabel: "320 319 1810",

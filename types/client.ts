@@ -18,10 +18,27 @@ export type ClientNavigationItem = {
   href: string;
 };
 
+export type ClientHero = {
+  badge: string;
+  title: string;
+  description: string;
+
+  primaryButton: string;
+  primaryHref: string;
+
+  secondaryButton: string;
+  secondaryHref: string;
+
+  image: string;
+  imageAlt: string;
+};
+
 export type ClientConfig = {
   slug: string;
+
   name: string;
   shortName: string;
+
   tagline: string;
   description: string;
 
@@ -34,6 +51,8 @@ export type ClientConfig = {
 
   brand: ClientBrand;
 
+  hero: ClientHero;
+
   contact: ClientContact;
 
   navigation: ClientNavigationItem[];
@@ -42,8 +61,10 @@ export type ClientConfig = {
     eyebrow: string;
     title: string;
     description: string;
+
     primaryLabel: string;
     primaryHref: string;
+
     secondaryLabel: string;
     secondaryHref: string;
   };
