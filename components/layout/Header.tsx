@@ -1,43 +1,52 @@
-import { company } from "@/config/company";
-
-import Button from "@/components/ui/Button";
-
-import { navigation } from "@/content/navigation";
+import Image from "next/image";
 
 import Container from "@/components/ui/Container";
 
-import Image from "next/image";
+import type { ClientConfig } from "@/types/client";
 
-export default function Header() {
+type HeaderProps = {
+  client: ClientConfig;
+};
+
+export default function Header({ client }: HeaderProps) {
   return (
     <header className="border-b border-gray-200 bg-white">
       <Container>
-  <div className="flex h-20 items-center justify-between">
-        <a href="/" className="flex items-center">
-  <Image
-    src="/logos/lisyspro-logo.png"
-    alt="Lisyspro"
-    width={220}
-    height={60}
-    priority
-  />
-</a>
+        <div className="flex h-20 items-center justify-between">
+          <a href="#inicio" className="flex items-center">
+            <Image
+              src={client.logo.src}
+              alt={client.logo.alt}
+              width={client.logo.width}
+              height={client.logo.height}
+              priority
+              className="h-auto max-h-14 w-auto"
+            />
+          </a>
 
-      <nav className="hidden items-center gap-8 md:flex">
-  {navigation.map((item) => (
-    <a
-      key={item.label}
-      href={item.href}
-      className="font-medium text-gray-700 transition-colors hover:text-[#005699]"
-    >
-      {item.label}
-    </a>
-  ))}
-</nav>
+          <nav className="hidden items-center gap-8 md:flex">
+            {client.navigation.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="font-medium text-gray-700 transition-colors hover:text-[var(--brand-primary)]"
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
 
-        <Button>Contáctanos</Button>
-       </div>
-</Container>
+          <a
+            href="#contacto"
+            className="rounded-lg px-5 py-2.5 text-sm font-semibold text-white transition hover:opacity-90"
+            style={{
+              backgroundColor: client.brand.primary,
+            }}
+          >
+            Contáctanos
+          </a>
+        </div>
+      </Container>
     </header>
-);
+  );
 }

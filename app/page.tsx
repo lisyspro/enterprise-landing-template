@@ -1,4 +1,7 @@
+import type { CSSProperties } from "react";
+
 import Header from "@/components/layout/Header";
+
 import Hero from "@/components/sections/Hero";
 import Services from "@/components/sections/Services";
 import WhyUs from "@/components/sections/WhyUs";
@@ -7,21 +10,32 @@ import CTA from "@/components/sections/CTA";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 
+import { lisysproConfig } from "@/clients/lisyspro/config";
+
 export default function Home() {
+  const client = lisysproConfig;
+
+  const brandStyles = {
+    "--brand-primary": client.brand.primary,
+    "--brand-secondary": client.brand.secondary,
+    "--brand-background": client.brand.background,
+    "--brand-foreground": client.brand.foreground,
+  } as CSSProperties;
+
   return (
-    <>
-      <Header />
+    <div style={brandStyles}>
+      <Header client={client} />
 
       <main>
         <Hero />
         <Services />
         <WhyUs />
         <Stats />
-        <CTA />
-        <Contact />
+        <CTA client={client} />
+        <Contact client={client} />
       </main>
 
-      <Footer />
-    </>
+      <Footer client={client} />
+    </div>
   );
 }

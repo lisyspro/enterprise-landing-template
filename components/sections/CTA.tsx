@@ -1,36 +1,48 @@
 import Container from "@/components/ui/Container";
-import { site } from "@/content/site";
+import type { ClientConfig } from "@/types/client";
 
-export default function CTA() {
+type CTAProps = {
+  client: ClientConfig;
+};
+
+export default function CTA({ client }: CTAProps) {
   return (
-    <section className="bg-[#005699] py-20 text-white">
+    <section
+      className="py-20 text-white"
+      style={{
+        backgroundColor: client.brand.primary,
+      }}
+    >
       <Container>
         <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-blue-100">
-            {site.cta.eyebrow}
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-white/80">
+            {client.cta.eyebrow}
           </p>
 
           <h2 className="text-3xl font-bold sm:text-4xl">
-            {site.cta.title}
+            {client.cta.title}
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-blue-100">
-            {site.cta.description}
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-white/80">
+            {client.cta.description}
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href={site.cta.primaryHref}
-              className="rounded-lg bg-white px-6 py-3 text-sm font-semibold text-[#005699] transition hover:bg-blue-50"
+              href={client.cta.primaryHref}
+              className="rounded-lg bg-white px-6 py-3 text-sm font-semibold transition hover:opacity-90"
+              style={{
+                color: client.brand.primary,
+              }}
             >
-              {site.cta.primaryLabel}
+              {client.cta.primaryLabel}
             </a>
 
             <a
-              href={site.cta.secondaryHref}
+              href={client.cta.secondaryHref}
               className="rounded-lg border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
             >
-              {site.cta.secondaryLabel}
+              {client.cta.secondaryLabel}
             </a>
           </div>
         </div>

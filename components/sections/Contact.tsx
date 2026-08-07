@@ -1,21 +1,25 @@
 import Container from "@/components/ui/Container";
-import { site } from "@/content/site";
+import type { ClientConfig } from "@/types/client";
 
-export default function Contact() {
+type ContactProps = {
+  client: ClientConfig;
+};
+
+export default function Contact({ client }: ContactProps) {
   const contactItems = [
     {
       title: "WhatsApp",
-      value: site.contact.whatsappLabel,
-      href: site.contact.whatsappUrl,
+      value: client.contact.whatsappLabel,
+      href: client.contact.whatsappUrl,
     },
     {
       title: "Correo",
-      value: site.contact.email,
-      href: `mailto:${site.contact.email}`,
+      value: client.contact.email,
+      href: `mailto:${client.contact.email}`,
     },
     {
       title: "Atención",
-      value: site.location,
+      value: client.contact.location,
       href: "#contacto",
     },
   ];
@@ -24,7 +28,12 @@ export default function Contact() {
     <section id="contacto" className="bg-white py-20">
       <Container>
         <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#005699]">
+          <p
+            className="mb-3 text-sm font-semibold uppercase tracking-[0.2em]"
+            style={{
+              color: client.brand.primary,
+            }}
+          >
             Contacto
           </p>
 
