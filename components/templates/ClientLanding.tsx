@@ -37,7 +37,7 @@ export default function ClientLanding({
 
         <WhyUs client={client} />
 
-        <Stats />
+        <Stats client={client} />
 
         <CTA client={client} />
 

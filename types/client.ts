@@ -56,6 +56,11 @@ export type ClientWhyUs = {
   features: ClientWhyUsFeature[];
 };
 
+export type ClientStat = {
+  value: string;
+  label: string;
+};
+
 export type ClientConfig = {
   slug: string;
 
@@ -79,6 +84,8 @@ export type ClientConfig = {
   services: ClientServices;
 
   whyUs: ClientWhyUs;
+
+  stats?: ClientStat[];
 
   contact: ClientContact;
 
