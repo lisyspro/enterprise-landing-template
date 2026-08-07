@@ -86,13 +86,13 @@ export default function Hero({ client }: HeroProps) {
 
             {client.hero.image ? (
               <Image
-                src={client.hero.image}
-                alt={client.hero.imageAlt}
-                width={800}
-                height={800}
-                priority
-                className="relative h-auto w-full max-w-3xl"
-              />
+  src={client.hero.image}
+  alt={client.hero.imageAlt}
+  width={800}
+  height={800}
+  priority
+  className="relative h-auto max-h-[520px] w-full max-w-3xl object-contain"
+/>
             ) : (
               <div
                 className="relative flex min-h-[300px] w-full max-w-lg flex-col items-center justify-center rounded-3xl border bg-white p-10 text-center shadow-sm"

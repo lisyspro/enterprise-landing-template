@@ -13,19 +13,19 @@ export const pistisConfig: ClientConfig = {
   description:
     "Servicios integrales en Seguridad y Salud en el Trabajo, medio ambiente y calidad.",
 
-  logo: {
-    src: "",
-    alt: "PISTIS Soluciones Integrales S.A.S.",
-    width: 220,
-    height: 80,
-  },
+    logo: {
+  src: "/logos/pistis-logo.png",
+  alt: "PISTIS Soluciones Integrales S.A.S.",
+  width: 300,
+  height: 86,
+},
 
-  brand: {
-    primary: "#00A81C",
-    secondary: "#F5B51B",
-    background: "#ffffff",
-    foreground: "#171717",
-  },
+ brand: {
+  primary: "#04BA02",
+  secondary: "#F7A717",
+  background: "#ffffff",
+  foreground: "#171717",
+},
 
   hero: {
     badge: "SEGURIDAD Y SALUD EN EL TRABAJO",
@@ -42,7 +42,7 @@ export const pistisConfig: ClientConfig = {
     secondaryButton: "Conocer servicios",
     secondaryHref: "#servicios",
 
-    image: "",
+    image: "/images/hero/pistis-hero.webp",
 
     imageAlt:
       "Seguridad y Salud en el Trabajo - PISTIS Soluciones Integrales",
