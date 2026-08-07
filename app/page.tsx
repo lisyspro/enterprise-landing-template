@@ -1,41 +1,5 @@
-import type { CSSProperties } from "react";
-
-import Header from "@/components/layout/Header";
-
-import Hero from "@/components/sections/Hero";
-import Services from "@/components/sections/Services";
-import WhyUs from "@/components/sections/WhyUs";
-import Stats from "@/components/sections/Stats";
-import CTA from "@/components/sections/CTA";
-import Contact from "@/components/sections/Contact";
-import Footer from "@/components/sections/Footer";
-
-import { lisysproConfig } from "@/clients/lisyspro/config";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  const client = lisysproConfig;
-
-  const brandStyles = {
-    "--brand-primary": client.brand.primary,
-    "--brand-secondary": client.brand.secondary,
-    "--brand-background": client.brand.background,
-    "--brand-foreground": client.brand.foreground,
-  } as CSSProperties;
-
-  return (
-    <div style={brandStyles}>
-      <Header client={client} />
-
-      <main>
-        <Hero />
-        <Services />
-        <WhyUs />
-        <Stats />
-        <CTA client={client} />
-        <Contact client={client} />
-      </main>
-
-      <Footer client={client} />
-    </div>
-  );
+  redirect("/lisyspro");
 }

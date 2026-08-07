@@ -13,12 +13,12 @@ export const pistisConfig: ClientConfig = {
   description:
     "Servicios integrales en Seguridad y Salud en el Trabajo, medio ambiente y calidad.",
 
-  logo: {
-    src: "/clients/pistis/logo.png",
-    alt: "PISTIS Soluciones Integrales S.A.S.",
-    width: 220,
-    height: 80,
-  },
+ logo: {
+  src: "",
+  alt: "PISTIS Soluciones Integrales S.A.S.",
+  width: 220,
+  height: 80,
+},
 
   brand: {
     primary: "#00A81C",

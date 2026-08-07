@@ -14,14 +14,25 @@ export default function Header({ client }: HeaderProps) {
       <Container>
         <div className="flex h-20 items-center justify-between">
           <a href="#inicio" className="flex items-center">
-            <Image
-              src={client.logo.src}
-              alt={client.logo.alt}
-              width={client.logo.width}
-              height={client.logo.height}
-              priority
-              className="h-auto max-h-14 w-auto"
-            />
+            {client.logo.src ? (
+              <Image
+                src={client.logo.src}
+                alt={client.logo.alt}
+                width={client.logo.width}
+                height={client.logo.height}
+                priority
+                className="h-auto max-h-14 w-auto"
+              />
+            ) : (
+              <span
+                className="text-2xl font-bold"
+                style={{
+                  color: client.brand.primary,
+                }}
+              >
+                {client.shortName}
+              </span>
+            )}
           </a>
 
           <nav className="hidden items-center gap-8 md:flex">
