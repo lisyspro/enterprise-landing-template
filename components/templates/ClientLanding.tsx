@@ -32,8 +32,11 @@ export default function ClientLanding({
 
       <main>
         <Hero client={client} />
-        <Services />
-        <WhyUs />
+
+        <Services client={client} />
+
+        <WhyUs client={client} />
+
         <Stats />
 
         <CTA client={client} />

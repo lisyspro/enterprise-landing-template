@@ -48,6 +48,102 @@ export const pistisConfig: ClientConfig = {
       "Seguridad y Salud en el Trabajo - PISTIS Soluciones Integrales",
   },
 
+  services: {
+    title: "Nuestros Servicios",
+
+    description:
+      "Soluciones integrales para proteger a tus trabajadores y fortalecer la gestión de tu organización.",
+
+    items: [
+      {
+        title: "Diseño e implementación del SG-SST",
+        description:
+          "Diseño e implementación del Sistema de Gestión de Seguridad y Salud en el Trabajo bajo el ciclo PHVA y la normatividad aplicable.",
+        icon: "shield",
+      },
+
+      {
+        title: "Capacitación y Formación",
+        description:
+          "Capacitación, formación y entrenamiento orientados a fortalecer la prevención y la seguridad en tu organización.",
+        icon: "training",
+      },
+
+      {
+        title: "Planes de Emergencia",
+        description:
+          "Diseño y acompañamiento en planes de emergencia para preparar a tu organización ante situaciones críticas.",
+        icon: "emergency",
+      },
+
+      {
+        title: "Evaluación de Riesgos",
+        description:
+          "Identificación y evaluación de riesgos para promover ambientes de trabajo más seguros y saludables.",
+        icon: "risk",
+      },
+
+      {
+        title: "Sistemas de Gestión",
+        description:
+          "Diseño e implementación de sistemas de gestión de seguridad y salud, calidad, ambiente y sistemas integrados.",
+        icon: "management",
+      },
+
+      {
+        title: "Promoción y Prevención",
+        description:
+          "Programas de bienestar, vigilancia epidemiológica, riesgo psicosocial, pausas activas y manejo del estrés.",
+        icon: "health",
+      },
+    ],
+  },
+
+  whyUs: {
+    title: "¿Por qué elegir PISTIS?",
+
+    description:
+      "Diseñamos soluciones adaptadas a las necesidades de cada organización para fortalecer la seguridad, la salud y el bienestar de sus trabajadores.",
+
+    features: [
+      {
+        title: "Cumplimiento normativo",
+        description:
+          "Desarrollamos soluciones alineadas con la legislación colombiana vigente, incluyendo el Decreto 1072 de 2015 y la Resolución 0312 de 2019.",
+      },
+
+      {
+        title: "Equipo multidisciplinario",
+        description:
+          "Contamos con profesionales altamente calificados y con experiencia en Seguridad y Salud en el Trabajo.",
+      },
+
+      {
+        title: "Soluciones adaptadas",
+        description:
+          "Adaptamos nuestros servicios al tamaño, las necesidades y la actividad económica de cada empresa.",
+      },
+
+      {
+        title: "Documentación técnica",
+        description:
+          "Desarrollamos documentación técnica alineada con los requisitos legales aplicables a cada organización.",
+      },
+
+      {
+        title: "Acompañamiento integral",
+        description:
+          "Acompañamos a nuestros clientes durante los procesos de diseño, implementación y fortalecimiento de sus sistemas de gestión.",
+      },
+
+      {
+        title: "Prevención y mejora continua",
+        description:
+          "Trabajamos con un enfoque preventivo, práctico y orientado a la mejora continua de la organización.",
+      },
+    ],
+  },
+
   contact: {
     email: "gerencia@pistis.com.co",
 
@@ -66,14 +162,17 @@ export const pistisConfig: ClientConfig = {
       label: "Inicio",
       href: "#inicio",
     },
+
     {
       label: "Servicios",
       href: "#servicios",
     },
+
     {
       label: "Nosotros",
       href: "#nosotros",
     },
+
     {
       label: "Contacto",
       href: "#contacto",

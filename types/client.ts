@@ -33,6 +33,29 @@ export type ClientHero = {
   imageAlt: string;
 };
 
+export type ClientService = {
+  title: string;
+  description: string;
+  icon: string;
+};
+
+export type ClientServices = {
+  title: string;
+  description: string;
+  items: ClientService[];
+};
+
+export type ClientWhyUsFeature = {
+  title: string;
+  description: string;
+};
+
+export type ClientWhyUs = {
+  title: string;
+  description: string;
+  features: ClientWhyUsFeature[];
+};
+
 export type ClientConfig = {
   slug: string;
 
@@ -52,6 +75,10 @@ export type ClientConfig = {
   brand: ClientBrand;
 
   hero: ClientHero;
+
+  services: ClientServices;
+
+  whyUs: ClientWhyUs;
 
   contact: ClientContact;
 
