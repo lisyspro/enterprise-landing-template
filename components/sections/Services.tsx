@@ -4,7 +4,7 @@ import ServiceIcon from "@/components/ui/ServiceIcon";
 
 export default function Services() {
   return (
-    <section className="bg-gray-50 py-24">
+    <section className="bg-gray-50 py-20">
       <Container>
 
         <div className="text-center">

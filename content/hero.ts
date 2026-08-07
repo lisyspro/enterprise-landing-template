@@ -1,7 +1,6 @@
 export const hero = {
   badge: "SOLUCIONES TECNOLÓGICAS",
-
-  title:
+    title:
     "Transformamos la tecnología en una ventaja competitiva para tu empresa.",
 
   description:
@@ -10,4 +9,6 @@ export const hero = {
   primaryButton: "Solicitar asesoría",
 
   secondaryButton: "Nuestros servicios",
+
+image: "/images/hero/hero-illustration.png",
 };
